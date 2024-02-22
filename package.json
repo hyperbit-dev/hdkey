@@ -5,7 +5,7 @@
   "main": "lib/hdkey.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/cryptocoinjs/hdkey"
+    "url": "git://github.com/hyperbit-dev/hdkey.git"
   },
   "license": "MIT",
   "keywords": [
@@ -18,9 +18,9 @@
     "crypto"
   ],
   "bugs": {
-    "url": "https://github.com/cryptocoinjs/hdkey/issues"
+    "url": "https://github.com/hyperbit-dev/hdkey/issues"
   },
-  "homepage": "https://github.com/cryptocoinjs/hdkey",
+  "homepage": "https://github.com/hyperbit-dev/hdkey",
   "files": [],
   "devDependencies": {
     "bigi": "^1.1.0",
@@ -35,7 +35,9 @@
   },
   "dependencies": {
     "bs58check": "^2.1.2",
-    "ripemd160": "^2.0.2",
+    "create-hmac": "^1.1.7",
+    "hash.js": "^1.1.7",
+    "randombytes": "^2.1.0",
     "safe-buffer": "^5.1.1",
     "secp256k1": "^4.0.0"
   },
@@ -44,7 +46,18 @@
     "browser-test": "mochify --wd -R spec",
     "test": "standard && mocha",
     "unit": "mocha",
-    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter list test/*.js",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha -- --reporter list test/*.js",
     "coveralls": "npm run-script coverage && node ./node_modules/.bin/coveralls < coverage/lcov.info"
+  },
+  "overrides": {
+    "@cypress/request": "^3.0.0",
+    "ajv": "^6.12.3",
+    "debug": "^4.3.1",
+    "flat": "^5.0.1",
+    "glob-parent": "^5.1.2",
+    "minimatch": "^3.0.5",
+    "minimist": "^1.2.6",
+    "shelljs": "^0.8.5",
+    "tough-cookie": "^4.1.3"
   }
 }
