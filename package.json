@@ -1,6 +1,6 @@
 {
   "name": "@hyperbitjs/hdkey",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Bitcoin BIP32 hierarchical deterministic keys",
   "main": "lib/hdkey.js",
   "repository": {
@@ -35,9 +35,7 @@
   },
   "dependencies": {
     "bs58check": "^2.1.2",
-    "create-hmac": "^1.1.7",
     "hash.js": "^1.1.7",
-    "randombytes": "^2.1.0",
     "safe-buffer": "^5.1.1",
     "secp256k1": "^5.0.1"
   },
