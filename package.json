@@ -1,6 +1,6 @@
 {
   "name": "@hyperbitjs/hdkey",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Bitcoin BIP32 hierarchical deterministic keys",
   "main": "./dist/index.cjs",
